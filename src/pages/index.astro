@@ -1,7 +1,50 @@
 ---
+import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Italian Food Landing Page">
-  <main class="bg-primary">text</main>
+  <main
+    class="h-[100dvh] overflow-x-hidden bg-gray-500 bg-hero-pattern bg-cover bg-left-top bg-no-repeat font-sans"
+  >
+    <Navbar />
+    <section
+      class="flex flex-col p-6 sm:items-center sm:justify-evenly sm:p-12 lg:flex-row"
+    >
+      <div>
+        <img class="w-24" src="/logo.png" alt="your logo" />
+        <h1 class="font-itali text-[6em] text-white sm:text-[10em]">
+          Italian food
+        </h1>
+        <div class="space-y-4 sm:space-y-12">
+          <p class="text-[1em] font-semibold italic text-white sm:text-[2em]">
+            Loremipsum dolor
+          </p>
+          <div class="space-y-2 sm:space-y-4">
+            <Button variant="secondary">Read more</Button>
+            <p
+              class="w-[34ch] text-xs italic tracking-wider text-white/90 sm:text-base"
+            >
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem sit
+              amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="relative max-w-[600px]">
+        <img src="/noodle.png" alt="a plate of spagettie" />
+        <img
+          class="absolute -right-12 -top-12 w-1/2 sm:-left-48 sm:top-96"
+          src="/spices.png"
+          alt="a small bowl of spice"
+        />
+        <img
+          class="absolute -bottom-40 sm:-bottom-80 sm:-right-40"
+          src="/leaves.png"
+          alt="pieces of leave"
+        />
+      </div>
+    </section>
+  </main>
 </Layout>

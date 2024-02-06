@@ -11,6 +11,12 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.3.2)(tailwindcss@3.4.1)
+  '@fontsource-variable/open-sans':
+    specifier: ^5.0.23
+    version: 5.0.23
+  '@fontsource/italianno':
+    specifier: ^5.0.18
+    version: 5.0.18
   astro:
     specifier: ^4.3.2
     version: 4.3.2(typescript@5.3.3)
@@ -621,6 +627,14 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/open-sans@5.0.23:
+    resolution: {integrity: sha512-fIvxjvdqyl53Nw2ostM94pNAXtqpJPKWUlNqZo2NGzOERz/TK4HL+Lgxy5XCNVw2yPdeGt01xb0Qr5aa9fZ9gA==}
+    dev: false
+
+  /@fontsource/italianno@5.0.18:
+    resolution: {integrity: sha512-zIjeSWlwortKJZkWrtPUCNpGkf4JCDHq+gevfuc7dy0uTOrOD20r9BF/1q46rjqesfWvU8mK/GZpXlvfwXFgwQ==}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}

@@ -1,0 +1,24 @@
+---
+import Search from "../components/Search.astro";
+const navItems = [
+  { href: "#", text: "Home" },
+  { href: "#", text: "Menu" },
+  { href: "#", text: "Our Story" },
+  { href: "#", text: "Contact Us" },
+];
+---
+
+<nav
+  class="bg-transparent flex w-full flex-wrap items-center justify-end p-4 text-white sm:p-8"
+>
+  <ul class="flex gap-4 text-sm sm:gap-8 sm:text-sm">
+    {
+      navItems.map((item, index) => (
+        <li class="font-sans font-semibold uppercase tracking-widest transition-colors hover:text-white/50">
+          <a href={item.href}>{item.text}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <Search />
+</nav>

@@ -1,0 +1,19 @@
+---
+import clsx from "clsx";
+
+export interface Props {
+  variant?: "primary" | "secondary" | "tertiary";
+}
+
+const { variant } = Astro.props;
+---
+
+<button
+  class={clsx("rounded-3xl px-6 py-2 font-bold uppercase", {
+    "bg-gray-300 text-transparent": variant === "primary",
+    "bg-gray-900 text-white": variant === "secondary",
+    "bg-gray-600 text-white": variant === "tertiary",
+  })}
+>
+  <slot />
+</button>
