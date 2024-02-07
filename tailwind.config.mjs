@@ -5,11 +5,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     colors: {
-      primary: "red",
-      secondary: "blue",
-      gray: colors.gray,
-      white: colors.white,
-      black: colors.black,
+      primary: colors.gray,
+      secondary: colors.white,
+      neutral: colors.neutral,
     },
     extend: {
       width: {
@@ -30,6 +28,8 @@ export default {
       },
       backgroundImage: {
         "hero-pattern": 'url("/hero-bg.png")',
+        "leaves-floating": 'url("/leaves-2.png")',
+        "leaves-floating-2": 'url("/leaves-3.png")',
       },
     },
   },

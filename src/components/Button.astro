@@ -1,19 +1,26 @@
 ---
+import type { HTMLAttributes } from "astro/types";
 import clsx from "clsx";
 
-export interface Props {
+export interface Props extends HTMLAttributes<"button"> {
+  class?: string;
   variant?: "primary" | "secondary" | "tertiary";
 }
 
-const { variant } = Astro.props;
+const { variant, class: className, ...rest } = Astro.props;
 ---
 
 <button
-  class={clsx("rounded-3xl px-6 py-2 font-bold uppercase", {
-    "bg-gray-300 text-transparent": variant === "primary",
-    "bg-gray-900 text-white": variant === "secondary",
-    "bg-gray-600 text-white": variant === "tertiary",
-  })}
+  class={clsx(
+    className,
+    "rounded-3xl px-6 py-2 font-bold uppercase tracking-widest",
+    {
+      "bg-primary-300 text-neutral-600": variant === "primary",
+      "bg-primary-900 text-neutral-100": variant === "secondary",
+      "bg-primary-600 text-neutral-100": variant === "tertiary",
+    },
+  )}
+  {...rest}
 >
   <slot />
 </button>
