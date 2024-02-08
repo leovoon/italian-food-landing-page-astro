@@ -17,7 +17,7 @@ import pizzaSlice from "../assets/pizza-slice.webp";
 
 <Layout title="Italian Food Landing Page">
   <main
-    class="h-[100dvh] bg-primary-600 bg-hero-pattern bg-cover bg-left-top bg-no-repeat font-sans md:h-[130dvh] lg:h-full lg:pb-24"
+    class="h-[130dvh] bg-primary-600 bg-hero-pattern bg-cover bg-left-top bg-no-repeat font-sans md:h-[200dvh] lg:h-full lg:pb-24"
   >
     <Navbar />
 
@@ -28,7 +28,7 @@ import pizzaSlice from "../assets/pizza-slice.webp";
       <div>
         <Image class="w-24" src={logo} alt="your logo" />
         <h1
-          class="font-itali text-[6em] text-neutral-100 md:text-nowrap md:text-[10em]"
+          class="font-itali text-[6em] leading-none text-neutral-100 md:text-nowrap md:text-[10em]"
         >
           Italian Food
         </h1>
@@ -41,7 +41,7 @@ import pizzaSlice from "../assets/pizza-slice.webp";
           <div class="space-y-2 md:space-y-4">
             <Button variant="secondary">Read more</Button>
             <p
-              class="w-[34ch] text-xs italic tracking-wider text-neutral-100/90 md:text-base"
+              class="text-xs italic tracking-wider text-neutral-100/90 sm:w-[34ch] md:text-base"
             >
               Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem sit
               amet. Lorem ipsum dolor sit amet.
@@ -184,16 +184,14 @@ import pizzaSlice from "../assets/pizza-slice.webp";
       <h2 class="font-itali text-[2em] text-neutral-100 md:text-[4em]">
         Lorem Ipsum Dolor Sit Amer
       </h2>
-      <p
-        class="w-[40ch] p-4 text-sm text-neutral-200 md:w-[60ch] md:text-center"
-      >
+      <p class="p-4 text-sm text-neutral-200 md:w-[60ch] md:text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, at.
         Corrupti facilis ad dolore aliquam sapiente nostrum.
       </p>
     </div>
     <div class="grid h-[300px] w-full place-items-center">
       <div
-        class="relative h-full w-full max-w-[300px] sm:max-w-[480px] lg:max-w-[40vw]"
+        class="relative h-full w-full max-w-[250px] sm:max-w-[480px] lg:max-w-[40vw]"
       >
         <Image class="absolute rotate-[112deg]" src={pizza} alt="a pizza" />
         <Image
@@ -288,7 +286,7 @@ import pizzaSlice from "../assets/pizza-slice.webp";
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6 lg:gap-0">
       <div class="order-last space-y-4 md:order-first lg:col-span-3">
         <h3 class="text-2xl">Brand</h3>
-        <p class="w-[30ch]">
+        <p class="md:w-[30ch]">
           Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
           <a href="http://www.freepik.com">Designed by Freepik</a>
         </p>

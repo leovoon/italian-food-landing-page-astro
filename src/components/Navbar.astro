@@ -11,12 +11,14 @@ const navItems = [
 <nav
   class="bg-transparent flex w-full flex-wrap items-center justify-end p-4 text-neutral-100 md:p-8"
 >
-  <ul class="flex gap-4 text-sm md:gap-8 md:text-sm">
+  <ul
+    class="flex gap-4 text-nowrap font-sans text-[clamp(12px,2vw,_16px)] md:gap-8"
+  >
     {
       navItems.map((item) => (
-        <li class="group relative font-sans font-semibold uppercase tracking-widest transition-colors">
+        <li class="group relative  font-semibold uppercase tracking-widest transition-colors">
           <span
-            class="absolute bottom-0 h-px w-full bg-primary-200 opacity-0 transition-opacity group-hover:opacity-100"
+            class="absolute bottom-0 h-px w-full bg-primary-200  opacity-0 transition-opacity group-hover:opacity-100"
             aria-hidden="true"
           />
           <a href={item.href}>{item.text}</a>
