@@ -27,9 +27,9 @@ export default {
         itali: ["Italianno", "sans-serif"],
       },
       backgroundImage: {
-        "hero-pattern": 'url("/hero-bg.png")',
-        "leaves-floating": 'url("/leaves-2.png")',
-        "leaves-floating-2": 'url("/leaves-3.png")',
+        "hero-pattern": 'url("./src/assets/hero-bg.webp")',
+        "leaves-floating": 'url("./src/assets/leaves-2.webp")',
+        "leaves-floating-2": 'url("./src/assets/leaves-3.webp")',
       },
     },
   },

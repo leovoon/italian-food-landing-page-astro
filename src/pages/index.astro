@@ -3,6 +3,16 @@ import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import Container from "../components/Container.astro";
+import { Image } from "astro:assets";
+import logo from "../assets/logo.webp";
+import noodle from "../assets/noodle.webp";
+import spices from "../assets/spices.webp";
+import leaves from "../assets/leaves.webp";
+import plate1 from "../assets/plate1.webp";
+import plate2 from "../assets/plate2.webp";
+import plate3 from "../assets/plate3.webp";
+import pizza from "../assets/pizza.webp";
+import pizzaSlice from "../assets/pizza-slice.webp";
 ---
 
 <Layout title="Italian Food Landing Page">
@@ -16,7 +26,7 @@ import Container from "../components/Container.astro";
       class="flex flex-col px-6 md:items-center md:justify-evenly md:px-12 lg:flex-row"
     >
       <div>
-        <img class="w-24" src="/logo.png" alt="your logo" />
+        <Image class="w-24" src={logo} alt="your logo" />
         <h1
           class="font-itali text-[6em] text-neutral-100 md:text-nowrap md:text-[10em]"
         >
@@ -41,15 +51,15 @@ import Container from "../components/Container.astro";
       </div>
 
       <div class="relative max-w-[600px]">
-        <img src="/noodle.png" alt="a plate of spagettie" />
-        <img
+        <Image src={noodle} alt="a plate of spagettie" />
+        <Image
           class="absolute -right-6 -top-24 w-1/2 lg:-left-48 lg:top-96"
-          src="/spices.png"
+          src={spices}
           alt="a small bowl of spice"
         />
-        <img
+        <Image
           class="-right-22 absolute -bottom-32 w-3/4 md:-bottom-56 md:-right-12"
-          src="/leaves.png"
+          src={leaves}
           alt="pieces of leave"
         />
       </div>
@@ -68,21 +78,21 @@ import Container from "../components/Container.astro";
       class="my-12 flex flex-col items-center justify-center gap-12 md:mb-20 md:flex-row"
     >
       <div class="mx-4 basis-1/4 space-y-6 text-center">
-        <img src="/plate1.png" alt="a plate of pasta" />
+        <Image src={plate1} alt="a plate of pasta" />
         <h3 class="mb-4 font-semibold">Spaghetti</h3>
         <p class="text-neutral-800">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aperiam!
         </p>
       </div>
       <div class="md:te mx-4 basis-1/4 space-y-6 text-center">
-        <img src="/plate2.png" alt="a plate of pasta" />
+        <Image src={plate2} alt="a plate of pasta" />
         <h3 class="mb-4 font-semibold">Spaghetti</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aperiam!
         </p>
       </div>
       <div class="mx-4 basis-1/4 space-y-6 text-center">
-        <img src="/plate3.png" alt="a plate of pasta" />
+        <Image src={plate3} alt="a plate of pasta" />
         <h3 class="mb-4 font-semibold">Spaghetti</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aperiam!
@@ -134,9 +144,9 @@ import Container from "../components/Container.astro";
         </p>
         <Button variant="secondary" class="px-12">Read more</Button>
       </div>
-      <img
+      <Image
         class="order-1 w-3/4 md:w-1/2"
-        src="/plate1.png"
+        src={plate1}
         alt="a plate of pasta"
       />
     </section>
@@ -154,9 +164,9 @@ import Container from "../components/Container.astro";
         </p>
         <Button variant="secondary" class="px-12">Read more</Button>
       </div>
-      <img
+      <Image
         class="order-1 w-3/4 md:order-2 md:w-1/2"
-        src="/plate2.png"
+        src={plate2}
         alt="a plate of pasta"
       />
     </section>
@@ -185,10 +195,10 @@ import Container from "../components/Container.astro";
       <div
         class="relative h-full w-full max-w-[300px] sm:max-w-[480px] lg:max-w-[40vw]"
       >
-        <img class="absolute rotate-[112deg]" src="/pizza.png" alt="a pizza" />
-        <img
+        <Image class="absolute rotate-[112deg]" src={pizza} alt="a pizza" />
+        <Image
           class="absolute -bottom-2 -left-8 w-1/2 rotate-[112deg] sm:-bottom-36 md:-bottom-48 lg:-bottom-36 xl:-bottom-[90%]"
-          src="/pizza-slice.png"
+          src={pizzaSlice}
           alt="a slice of pizza"
         />
       </div>
